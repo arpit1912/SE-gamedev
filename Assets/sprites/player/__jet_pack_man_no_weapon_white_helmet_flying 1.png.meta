@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: ce183ee5637b7ef4eb665cea909f048a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3324848155747868437
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_0
+  - first:
+      213: -1010043079178439544
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_1
+  - first:
+      213: 7322222675213530118
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_2
+  - first:
+      213: -4202796668143246107
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_3
+  - first:
+      213: 2978154835091208475
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_4
+  - first:
+      213: -6209574795907522166
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_5
+  - first:
+      213: 5075825117586093226
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_6
+  - first:
+      213: -2723713323211546817
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_7
+  - first:
+      213: 7849348588401419485
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_8
+  - first:
+      213: -5543807264725611543
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_9
+  - first:
+      213: -1364056802625859667
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_10
+  - first:
+      213: 665326121880986862
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_11
+  - first:
+      213: -8417672227855239411
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_12
+  - first:
+      213: -2144249164615647104
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_13
+  - first:
+      213: 669389680456233619
+    second: __jet_pack_man_no_weapon_white_helmet_flying 1_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1201
+        width: 682
+        height: 588
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be02988d734cbd1d0800000000000000
+      internalID: -3324848155747868437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_1
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1201
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8843ab1cb2b9bf1f0800000000000000
+      internalID: -1010043079178439544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_2
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1201
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604b9627ab2cd9560800000000000000
+      internalID: 7322222675213530118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_3
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 1201
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4602c92baaca5c0800000000000000
+      internalID: -4202796668143246107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_4
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 1201
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1939b72b08845920800000000000000
+      internalID: 2978154835091208475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 602
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81a6b37f9823d9a0800000000000000
+      internalID: -6209574795907522166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_6
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 602
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa479b33d04f07640800000000000000
+      internalID: 5075825117586093226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_7
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 602
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f1af3d92d633ad0800000000000000
+      internalID: -2723713323211546817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_8
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 602
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd461e914fc7eec60800000000000000
+      internalID: 7849348588401419485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_9
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 602
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebccc24aa07013b0800000000000000
+      internalID: -5543807264725611543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafc70aa095e11de0800000000000000
+      internalID: -1364056802625859667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_11
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 3
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee421823596bb3900800000000000000
+      internalID: 665326121880986862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_12
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07740f15bb6e2b80800000000000000
+      internalID: -8417672227855239411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_13
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 3
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0800829deb81e32e0800000000000000
+      internalID: -2144249164615647104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __jet_pack_man_no_weapon_white_helmet_flying 1_14
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 3
+        width: 689
+        height: 596
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392f7e72e562a4900800000000000000
+      internalID: 669389680456233619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
