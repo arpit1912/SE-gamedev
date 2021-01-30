@@ -37,6 +37,12 @@ public class platformGenerator : MonoBehaviour
             platformWidths[i] = thePlatforms[i].GetComponent<BoxCollider2D>().size.x;
         }
 
+        spikePosition = new Vector3[theSpikes.Length];
+        spikePosition[0] = new Vector3(0f, 0.84f , -1f);
+        spikePosition[1] = new Vector3(0f, -4.4f , -1f);
+        spikePosition[2] = new Vector3(0f, 0.4f , -1f);
+        spikePosition[3] = new Vector3(0f, 0f , -1f);
+
     } 
 
     // Update is called once per frame
@@ -65,18 +71,19 @@ public class platformGenerator : MonoBehaviour
             }
             else{
                     if(Random.Range(0f, 100f) < randomSpikeThreshold){
-                
-                        spikePosition = new Vector3[theSpikes.Length];
-                        spikePosition[0] = new Vector3(2f, 0.84f , -1f);
-                        spikePosition[1] = new Vector3(0f, -4.4f , -1f);
-                        spikePosition[2] = new Vector3(0f, 0.4f , -1f);
-                        spikePosition[3] = new Vector3(0f, 0f , -1f);
+                 
                         //Vector3 spikePosition = new Vector3(0f, 0.84f , -1f);
                         if(randomSpikeThreshold < 100){
                             randomSpikeThreshold += 1f;
                         }
+
+                        Vector3 newSpikeposition = new Vector3(Random.Range(5f, 14f), 0f, 0f);
                         spikeSelector = Random.Range(0, theSpikes.Length);
-                        Instantiate (theSpikes[spikeSelector], transform.position + spikePosition[spikeSelector], transform.rotation );
+                        Instantiate (theSpikes[spikeSelector], transform.position + spikePosition[spikeSelector] + newSpikeposition, transform.rotation );
+
+                        newSpikeposition = new Vector3(Random.Range(5f, 14f), 0f, 0f);
+                        spikeSelector = Random.Range(0, theSpikes.Length);
+                        Instantiate (theSpikes[spikeSelector], transform.position + spikePosition[spikeSelector] - newSpikeposition, transform.rotation );
                     }
             } 
             Instantiate (thePlatforms[platformSelector], transform.position, transform.rotation);

@@ -941,7 +941,7 @@ MonoBehaviour:
   thePlatforms:
   - {fileID: 5252059203657846435, guid: e98b20d6ab480e140a41e6e4521c6ee1, type: 3}
   generationPoint: {fileID: 1699780998}
-  randomSpikeThreshold: 65
+  randomSpikeThreshold: 80
   theSpikes:
   - {fileID: 4959762472236681372, guid: 5bef052f02f753548a4196751352459a, type: 3}
   - {fileID: 1043256728699295801, guid: cb032f5f37000d742a337b071b36e1ef, type: 3}
