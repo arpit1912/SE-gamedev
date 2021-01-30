@@ -53,7 +53,7 @@ public class platformGenerator : MonoBehaviour
             //transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector]/2) + (oldplatformWidth/2) + distanceBetween, transform.position.y, transform.position.z);
             //oldplatformWidth = platformWidths[platformSelector];
 
-            transform.position = new Vector3(transform.position.x + 2*(platformWidths[platformSelector]/3) , transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector]/2) , transform.position.y, transform.position.z);
 
             
             if(CurrentCount == FreqOfPortal){ // essentially means to make the gate after every FreqOfPortal times
@@ -69,7 +69,7 @@ public class platformGenerator : MonoBehaviour
                         spikePosition = new Vector3[theSpikes.Length];
                         spikePosition[0] = new Vector3(2f, 0.84f , -1f);
                         spikePosition[1] = new Vector3(0f, -4.4f , -1f);
-                        spikePosition[2] = new Vector3(0f, 9.8f , -1f);
+                        spikePosition[2] = new Vector3(0f, 0.4f , -1f);
                         spikePosition[3] = new Vector3(0f, 0f , -1f);
                         //Vector3 spikePosition = new Vector3(0f, 0.84f , -1f);
                         if(randomSpikeThreshold < 100){
@@ -80,7 +80,7 @@ public class platformGenerator : MonoBehaviour
                     }
             } 
             Instantiate (thePlatforms[platformSelector], transform.position, transform.rotation);
-        
+            transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector]/2) , transform.position.y, transform.position.z);
             
         }
 
