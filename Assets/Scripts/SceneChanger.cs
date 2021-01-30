@@ -18,6 +18,6 @@ public class SceneChanger : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other){
         Debug.Log("Triggered");
-        //Destroy (gameObject);
+        Destroy (gameObject);
     }
 }
