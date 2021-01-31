@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8094800185133356251}
   - component: {fileID: 3329967811508721311}
   - component: {fileID: -5972360849286555179}
-  - component: {fileID: 3718003015563023491}
+  - component: {fileID: 1135544526637194643}
   m_Layer: 0
   m_Name: DoorLocked
   m_TagString: Untagged
@@ -109,7 +109,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 4.64}
   m_EdgeRadius: 0
---- !u!114 &3718003015563023491
+--- !u!114 &1135544526637194643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

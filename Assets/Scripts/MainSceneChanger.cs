@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class SceneChanger : MonoBehaviour
+public class MainSceneChanger : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,7 @@ public class SceneChanger : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other){
         Debug.Log("Triggered");
-        Destroy (gameObject);
+        SceneManager.LoadScene("DumpPortalScene");
+
     }
 }
