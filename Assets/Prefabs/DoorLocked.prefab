@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3329967811508721311}
   - component: {fileID: -5972360849286555179}
   - component: {fileID: 1135544526637194643}
-  - component: {fileID: 2708013764916942490}
   m_Layer: 0
   m_Name: DoorLocked
   m_TagString: Untagged
@@ -122,16 +121,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38e1e469ae3b5624cb2a8fc6d71896a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2708013764916942490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5491887723133757434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91bceb38e7f5be74cbc396372fa1a0f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platformDestructionPoint: {fileID: 0}
