@@ -28,13 +28,13 @@ public class GridControl : MonoBehaviour
 
     void GenInventory()
     {
-        if (playerInventory.Count < 6)
+        if (playerInventory.Count < 8)
         {
             gridGroup.constraintCount = playerInventory.Count;
         }
         else
         {
-            gridGroup.constraintCount = 5;
+            gridGroup.constraintCount = 7;
         }
         
         foreach (PlayerItem newItem in playerInventory)
