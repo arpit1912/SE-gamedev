@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 360099384628433243}
   - component: {fileID: 2277612259184908522}
   - component: {fileID: 3632225138291099931}
+  - component: {fileID: 3869881304075628611}
+  - component: {fileID: -4513134205333918550}
   m_Layer: 0
   m_Name: ewaste4
   m_TagString: Untagged
@@ -92,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.04, y: 0}
@@ -108,3 +110,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.78, y: 1.3}
   m_EdgeRadius: 0
+--- !u!114 &3869881304075628611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762932331663445372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857049e906179934fa46f8ac9f6c5f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4513134205333918550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762932331663445372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91bceb38e7f5be74cbc396372fa1a0f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformDestructionPoint: {fileID: 0}

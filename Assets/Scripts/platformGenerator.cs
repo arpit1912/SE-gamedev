@@ -10,11 +10,10 @@ public class platformGenerator : MonoBehaviour
     //public GameObject thePlatform;
     public GameObject[] thePlatforms;
     public Transform generationPoint;
-    //public float distanceBetween;
 
-    //private float platformWidth;
-
-    //public float distanceBetweenMin, distanceBetweenMax;
+    public GameObject[] Collectables;
+    private List<Vector3> collectablePositions;
+    private int collectableSelector;
 
     private int platformSelector;
     private float[] platformWidths;
@@ -30,7 +29,7 @@ public class platformGenerator : MonoBehaviour
     private  int CurrentCount;
     private float time;
     private Scene scene;
-
+    private static bool firstTime;
     private void Awake()
     {
         CurrentCount = 1;
@@ -45,7 +44,7 @@ public class platformGenerator : MonoBehaviour
         FreqOfPortal = 5;
         CurrentCount = 1;
         time = 0f;
-        Debug.Log("Called Each time!");
+        //Debug.Log("Called Each time!");
         for(int i = 0; i<thePlatforms.Length; i++){
             platformWidths[i] = thePlatforms[i].GetComponent<BoxCollider2D>().size.x;
         }
@@ -57,6 +56,24 @@ public class platformGenerator : MonoBehaviour
         spikePosition[2] = new Vector3(0f, 0.4f , -1f);
         spikePosition[3] = new Vector3(0f, 0f , -1f);
 
+        // possible locations for the Collectables
+        collectablePositions = new List<Vector3>();
+        collectablePositions.Add(new Vector3(0f,3f,-1f));
+        collectablePositions.Add(new Vector3(0f,4f,-1f));
+        collectablePositions.Add(new Vector3(0f,5f,-1f));
+        collectablePositions.Add(new Vector3(0f,6f,-1f));
+        collectablePositions.Add(new Vector3(0f,7f,-1f));
+        
+        // reseting the prefebs at the start of the game
+        if (!firstTime)
+        {
+            for (int i = 0; i < Collectables.Length; i++)
+            {
+                PlayerPrefs.SetInt(Collectables[i].name, 0);
+            }
+            Debug.Log("Called for the first time I think!!!!");
+            firstTime = true;
+        }
     } 
 
     // Update is called once per frame
@@ -67,24 +84,20 @@ public class platformGenerator : MonoBehaviour
 
             if (Time.unscaledTime - time > 1f)
             {
-                Debug.Log("Invokes here!");
+               // Debug.Log("Invokes here!");
                 CurrentCount++;
                 time = Time.unscaledTime;
             }
 
-            //distanceBetween = Random.Range(distanceBetweenMin, distanceBetweenMax);
-
             platformSelector = Random.Range(0, thePlatforms.Length);
-
-            //transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector]/2) + (oldplatformWidth/2) + distanceBetween, transform.position.y, transform.position.z);
-            //oldplatformWidth = platformWidths[platformSelector];
-
+            collectableSelector = Random.Range(0, Collectables.Length);
+            
             transform.position = new Vector3(transform.position.x + (platformWidths[platformSelector]/2) , transform.position.y, transform.position.z);
 
             
             if(CurrentCount % FreqOfPortal == 0){ // essentially means to make the gate after every FreqOfPortal times
                  
-                    Debug.Log("Current count is = "+ CurrentCount + " FreqOfPortal is = " + FreqOfPortal);
+                    //Debug.Log("Current count is = "+ CurrentCount + " FreqOfPortal is = " + FreqOfPortal);
                     
                     Vector3 GateLocation = new Vector3(2f,2.5f + Random.Range(0f,5f),-1f);
                     Instantiate(Portal,transform.position + GateLocation,transform.rotation);
@@ -107,6 +120,27 @@ public class platformGenerator : MonoBehaviour
                         spikeSelector = Random.Range(0, theSpikes.Length);
                         Instantiate (theSpikes[spikeSelector], transform.position + spikePosition[spikeSelector] - newSpikeposition, transform.rotation );
                     }
+                    
+                    // create the collectables from here.
+                    Vector3 collectablePosition = new Vector3(Random.Range(0f,5f), 0f, 0f);
+                    collectablePosition = collectablePosition + transform.position + collectablePositions[Random.Range(0,collectablePositions.Count)];
+                    
+                    GameObject go = Instantiate(Collectables[Random.Range(0, Collectables.Length)], collectablePosition, transform.rotation);
+                    go.SetActive(true);
+                    
+                    collectablePosition = new Vector3(Random.Range(5f, 9.5f), 0f, 0f);
+                    collectablePosition = collectablePosition + transform.position + collectablePositions[Random.Range(0,collectablePositions.Count)];
+                    
+                    go = Instantiate(Collectables[Random.Range(0, Collectables.Length)], collectablePosition, transform.rotation);
+                    go.SetActive(true);
+                    // creation of one collectable ends here!
+                    
+                    collectablePosition = new Vector3(Random.Range(9.5f, 14f), 0f, 0f);
+                    collectablePosition = collectablePosition + transform.position + collectablePositions[Random.Range(0,collectablePositions.Count)];
+                    
+                    go = Instantiate(Collectables[Random.Range(0, Collectables.Length)], collectablePosition, transform.rotation);
+                    go.SetActive(true);
+                    // ending the creation of the second colletable
             } 
             Instantiate (thePlatforms[platformSelector], transform.position, transform.rotation);
             GameObject.DontDestroyOnLoad(thePlatforms[platformSelector]);

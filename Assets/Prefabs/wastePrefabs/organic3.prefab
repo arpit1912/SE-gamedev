@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8093652947044964126}
   - component: {fileID: 1909029954514656685}
   - component: {fileID: 8300020309966233955}
+  - component: {fileID: -3251764320588707984}
   m_Layer: 0
   m_Name: organic3
   m_TagString: Untagged
@@ -93,7 +94,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -170,3 +171,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformDestructionPoint: {fileID: 0}
+--- !u!114 &-3251764320588707984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6244095002328620779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857049e906179934fa46f8ac9f6c5f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

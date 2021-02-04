@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
 
             MainSceneChanger.sceneChangeOccurred = false;
         }
-        Debug.Log("PLayer is active now");
+        //Debug.Log("PLayer is active now");
     }
 
     // Update is called once per frame

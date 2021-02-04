@@ -5,51 +5,59 @@ using UnityEngine.UI;
 
 public class Destroy : MonoBehaviour
 {
+    // 7 categories 
     // Start is called before the first frame update
-    // 0 signifies for bio-degradable waste
-    // 1 signifies for the electronic waste
-    // 2 metal
-    // 3 glass 
-    // 4 charge
-    // 5 plastic
+    // 0 ewaste
+    // 1 battery
+    // 2 glass
+    // 3 organic - bio-degradable -
+    // 4 paper
+    // 5 metal
+    // 6 plastic
     void Start()
     {
         var button = transform.GetComponent<Button>();
 
         button.onClick.AddListener(delegate()
         {
-            
-            if((TypeController.getType() == 0) &&  gameObject.CompareTag("bio-degradable"))
+            Debug.Log(gameObject.tag + " " + TypeController.getType()) ;
+            if((TypeController.getType() == 0) &&  gameObject.CompareTag("ewaste"))
+            {
+                Destroy(this.gameObject);
+                Debug.Log("This is e-waste waste");
+                return;
+            }
+            else if ((TypeController.getType() == 1) &&  gameObject.CompareTag("battery"))
+            {
+                Destroy(this.gameObject);
+                Debug.Log("This is battery waste");
+                return;
+            }
+            else if((TypeController.getType() == 2) &&  gameObject.CompareTag("glass"))
+            {
+                Destroy(this.gameObject);
+                Debug.Log("This is glass waste");
+                return;
+            }
+            else if((TypeController.getType() == 3) &&  gameObject.CompareTag("bio-degradable"))
             {
                 Destroy(this.gameObject);
                 Debug.Log("This is bio-degradable waste");
                 return;
             }
-            else if ((TypeController.getType() == 1) &&  gameObject.CompareTag("electronic"))
+            else if((TypeController.getType() == 4) &&  gameObject.CompareTag("paper"))
             {
                 Destroy(this.gameObject);
-                Debug.Log("This is elctronic waste");
+                Debug.Log("This is the paper up!!");
                 return;
             }
-            else if((TypeController.getType() == 2) &&  gameObject.CompareTag("metal"))
+            else if((TypeController.getType() == 5) &&  gameObject.CompareTag("metal"))
             {
                 Destroy(this.gameObject);
-                Debug.Log("This is Metallic waste");
+                Debug.Log("This is metal waste");
                 return;
             }
-            else if((TypeController.getType() == 3) &&  gameObject.CompareTag("glass"))
-            {
-                Destroy(this.gameObject);
-                Debug.Log("This is Glasss waste");
-                return;
-            }
-            else if((TypeController.getType() == 4) &&  gameObject.CompareTag("charge"))
-            {
-                Destroy(this.gameObject);
-                Debug.Log("This is the charge up!!");
-                return;
-            }
-            else if((TypeController.getType() == 5) &&  gameObject.CompareTag("plastic"))
+            else if((TypeController.getType() == 6) &&  gameObject.CompareTag("plastic"))
             {
                 Destroy(this.gameObject);
                 Debug.Log("This is plastic waste");

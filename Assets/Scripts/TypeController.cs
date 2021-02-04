@@ -9,9 +9,9 @@ public class TypeController : MonoBehaviour
     private static int type;    // Anyone should not be able to change it as it will create a mess otherwise.
     void Start()
     {
-        Categories = 6;
-        type = Random.Range(0, 5);  // Define the max based on the type of waste we have 
-        Debug.Log(type);
+        Categories = 7;
+        type = Random.Range(0, Categories);  // Define the max based on the type of waste we have 
+        Debug.Log("Type is " + type);
     }
 
     public static int getType()

@@ -6,20 +6,19 @@ using UnityEngine.UI;
 
 public class DumpSceneChanger : MonoBehaviour
 {
+    private float startTime;
     // Start is called before the first frame update
     void Start()
     {
-        var button = transform.GetComponent<Button>();
-
-        button.onClick.AddListener(delegate()
-        {
-            SceneManager.LoadScene("mainScene");
-        });
+        startTime = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Time.time - startTime > 5)
+        {
+            SceneManager.LoadScene("mainScene");
+        }
     }
 }

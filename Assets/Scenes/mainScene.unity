@@ -591,12 +591,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &453690251 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4495567079661056262, guid: 96252341be9287e4886e40fad9849406,
-    type: 3}
-  m_PrefabInstance: {fileID: 6386316417560032215}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &453690252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5136693121458461634, guid: 96252341be9287e4886e40fad9849406,
@@ -941,6 +935,23 @@ MonoBehaviour:
   thePlatforms:
   - {fileID: 5252059203657846435, guid: e98b20d6ab480e140a41e6e4521c6ee1, type: 3}
   generationPoint: {fileID: 1699780998}
+  Collectables:
+  - {fileID: 3021069599619495839, guid: ade5d52ead167c34bbd27ad3394caf28, type: 3}
+  - {fileID: 7435906731705720902, guid: 0a155703b76e5444c958db969894ea46, type: 3}
+  - {fileID: 8492496726399107596, guid: 9796b6133c5db8c49a154ca16e43d006, type: 3}
+  - {fileID: 5762932331663445372, guid: b940b5de0c658e14dae939a13caa3747, type: 3}
+  - {fileID: 654263606482243090, guid: 3e3a2aeab3c85ef4eb575b085bfbaeb3, type: 3}
+  - {fileID: 745834889756837988, guid: c901fdfa122437e44a9b32da1a33f93a, type: 3}
+  - {fileID: 3724162054772359223, guid: 8ab1d81c5c8a03a4aa27d360a4fb16af, type: 3}
+  - {fileID: 4521153438878670245, guid: 59024beb4a1f31b4a87479bbf244a66b, type: 3}
+  - {fileID: 4357288142064229913, guid: 1681a93330eb8ec4fb3863bb8cfb1637, type: 3}
+  - {fileID: 2518272070546580920, guid: 2bcf587893014df42bcdf56e55eeeea6, type: 3}
+  - {fileID: 9057627193586740074, guid: 59d427090784f5e409fefe794ccbb27c, type: 3}
+  - {fileID: 6244095002328620779, guid: cbcbba8b7c7efa54fbae70de11086e1a, type: 3}
+  - {fileID: 4511190180926408850, guid: 2ab2f06ffbde318499c1622563590075, type: 3}
+  - {fileID: 2088962668851915169, guid: 3b5c76102cf49944397448cfffe3dc0c, type: 3}
+  - {fileID: 521906545030469810, guid: c458be6315c79c44f8b8188c32bde0f3, type: 3}
+  - {fileID: 88874639112475934, guid: ae9d5b41c2cce8741a7716643febb75f, type: 3}
   randomSpikeThreshold: 80
   theSpikes:
   - {fileID: 4959762472236681372, guid: 5bef052f02f753548a4196751352459a, type: 3}
@@ -1404,7 +1415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066ed29b0a0b11d42ac498348907d20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 453690251}
   Offset: 5
   offsetSmoothing: 0
 --- !u!1 &1933679113
