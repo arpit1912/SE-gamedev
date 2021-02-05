@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
        if (Instance != null)
        {
            
-           Debug.Log("Object Already exist");
+           //Debug.Log("Object Already exist");
            
            Destroy(this.gameObject);
            
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
        }
 
        Instance = this;
-       Debug.Log("Hello");
+       //Debug.Log("Hello");
        GameObject.DontDestroyOnLoad(this.gameObject);
        rigidbody = GetComponent<Rigidbody2D> ();
        rigidbody.velocity = new Vector2(GameSpeed,0);
