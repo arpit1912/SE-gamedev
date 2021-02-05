@@ -53,7 +53,7 @@ public class platformGenerator : MonoBehaviour
         spikePosition = new Vector3[theSpikes.Length];
         spikePosition[0] = new Vector3(0f, 0.84f , -1f);
         spikePosition[1] = new Vector3(0f, -4.4f , -1f);
-        spikePosition[2] = new Vector3(0f, 0.4f , -1f);
+        spikePosition[2] = new Vector3(0f, 0.2f , -1f);
         spikePosition[3] = new Vector3(0f, 0f , -1f);
 
         // possible locations for the Collectables
