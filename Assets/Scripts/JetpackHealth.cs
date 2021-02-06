@@ -9,7 +9,7 @@ public class JetpackHealth : MonoBehaviour
 	//private float currentHealth;
 	public float currentFactor;
 	public JetpackPower jetpackbar;
-	public int LevelUpTime = 5;
+	public int LevelUpTime = 8;
 	public float time;
     // Start is called before the first frame update
     void Start()

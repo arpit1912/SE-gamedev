@@ -35,11 +35,14 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-	    if (Time.time - time > 10)
+	    if (Time.time - time > 8)
 	    {
-		    factor = factor * 2;
+		    factor = factor * 1.2f;
 		    time = Time.time;
 	    }
+
+		slider.value -= 0.008f;
+
     }
 
     public void DealtDamage(float damage)
