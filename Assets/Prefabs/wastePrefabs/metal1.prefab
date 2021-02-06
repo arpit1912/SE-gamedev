@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5275992054370081358}
   - component: {fileID: 3835977362839697218}
   - component: {fileID: -9121143386387633590}
+  - component: {fileID: -2427351403027464625}
   m_Layer: 0
   m_Name: metal1
   m_TagString: Untagged
@@ -155,3 +156,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857049e906179934fa46f8ac9f6c5f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2427351403027464625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724162054772359223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67aef024d4ea2ca48b9e350d400d6c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degreesPerSecond: 5
+  amplitude: 0.5
+  frequency: 1
