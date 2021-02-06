@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d21f6ece3b46479f0c328f8c6007e0, type: 3}
-  m_Name: main_gradient
+  m_Name: gradient3
   m_EditorClassIdentifier: 
   colorMode: 3
-  topLeft: {r: 1, g: 0.78039217, b: 0.34117648, a: 1}
-  topRight: {r: 1, g: 0.78039217, b: 0.34117648, a: 1}
-  bottomLeft: {r: 1, g: 0.6117647, b: 0.19215687, a: 1}
-  bottomRight: {r: 1, g: 0.6117647, b: 0.19215687, a: 1}
+  topLeft: {r: 1, g: 0.7924528, b: 0.7924528, a: 1}
+  topRight: {r: 1, g: 1, b: 1, a: 0.3764706}
+  bottomLeft: {r: 1, g: 0.6886792, b: 0.518662, a: 1}
+  bottomRight: {r: 1, g: 0.6509804, b: 0.4627451, a: 0.29803923}
