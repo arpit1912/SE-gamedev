@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DumpPortalScene.unity
     guid: d5e0c53b53572e846884a03c652a5208
+  - enabled: 1
+    path: Assets/Scenes/transition scene.unity
+    guid: 2bded2ba0897b5243a62f1c805bf543d
   m_configObjects: {}
