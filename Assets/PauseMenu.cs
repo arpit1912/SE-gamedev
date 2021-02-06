@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-
+    public GameObject ConfirmationUI;
     void start(){ 
         //Canvas.SetActive (false);
     }
@@ -39,6 +39,15 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    public void LoadConfirmationUI()
+    {
+        ConfirmationUI.SetActive(true);
+    }
+
+    public void ReturnBack()
+    {
+        ConfirmationUI.SetActive(false);
+    }
     public void LoadMenu(){
         Debug.Log("load menu");
         SceneManager.LoadScene("menuScene");
