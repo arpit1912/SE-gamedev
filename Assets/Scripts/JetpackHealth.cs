@@ -15,9 +15,10 @@ public class JetpackHealth : MonoBehaviour
     void Start()
     {
 	    time = Time.time;
-	    currentFactor = 0.005f;
+	    currentFactor = 0.01f;
 	    Debug.Log("This is the jetpack bar "+jetpackbar.slider.value);
 		jetpackbar.SetHealth(PlayerPrefs.GetFloat("jetpack"));
+		//jetpackbar.SetHealth(100);	// only for debugging purposes
     }
 
     private void OnDestroy()

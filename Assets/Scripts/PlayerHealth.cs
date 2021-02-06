@@ -17,7 +17,8 @@ public class PlayerHealth : MonoBehaviour
     {
 	    time = (int)Time.time ;
 	    currentHealth = PlayerPrefs.GetFloat("health");
-		healthBar.SetHealth(currentHealth);
+	    //currentHealth = 100;	// only for debugging pusposes
+	    healthBar.SetHealth(currentHealth);
     }
 
     private void OnDestroy()

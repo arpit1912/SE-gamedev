@@ -23,7 +23,7 @@ public class MainSceneChanger : MonoBehaviour
         Destroy(GameObject.Find("DoorLocked"));
         sceneChangeOccurred = true;
         Debug.Log("Triggered");
-        //PlayerPrefs.SetFloat("playerY",go.transform.position.y);
+        PlayerPrefs.SetFloat("playerY",4f);
         PlayerPrefs.SetFloat("playerX",go.transform.position.x);
         SceneManager.LoadScene("DumpPortalScene");
 

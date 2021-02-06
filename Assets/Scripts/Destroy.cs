@@ -65,7 +65,19 @@ public class Destroy : MonoBehaviour
             }
         });
     }
+    public void updatehealth(float number){
+        float current_health = PlayerPrefs.GetFloat("health");
+        current_health += number;
+        PlayerPrefs.SetFloat("health",current_health);
+    }
 
+    public void updatefuel(float number)
+    {
+        float current_fuel = PlayerPrefs.GetFloat("jetpack");
+        current_fuel += number;
+        PlayerPrefs.SetFloat("jetpack",current_fuel);
+
+    }
     // Update is called once per frame
     void Update()
     {

@@ -26,7 +26,7 @@ public class Floater : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         index = (int)Random.Range(0,4);
-        Debug.Log(index);
+//        Debug.Log(index);
         transform.Rotate(Vector3.forward * angle);
         //transform.eulerAngles = Vector3.forward * degreesPerSecond;
         //index = (int)Random.Range(0,4);

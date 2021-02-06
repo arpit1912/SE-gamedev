@@ -4666,6 +4666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d2a5950b82dc2d4f8e1904dfa3c42d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 0
   slider: {fileID: 2077127653}
   gradient:
     serializedVersion: 2
@@ -5029,6 +5030,10 @@ PrefabInstance:
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 2077127652}
+    - target: {fileID: 453690256, guid: 96252341be9287e4886e40fad9849406, type: 3}
+      propertyPath: jetpackbar
+      value: 
+      objectReference: {fileID: 688930329}
     - target: {fileID: 4495567079661056262, guid: 96252341be9287e4886e40fad9849406,
         type: 3}
       propertyPath: m_Name

@@ -35,22 +35,26 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        count++;
-        if (count == 20)
+        if (!PlayerController.isDead)
         {
-            score = score + factor*1;
-            count = 0;
-        }
-            
-        if (Time.time - time > 6)
-        {
-            if (factor < 100)
+            count++;
+            if (count == 20)
             {
-                factor = 2 * factor;
+                score = score + factor*1;
+                count = 0;
             }
+            
+            if (Time.time - time > 6)
+            {
+                if (factor < 100)
+                {
+                    factor = 2 * factor;
+                }
                 
-            time = Time.time;
+                time = Time.time;
+            }
+            heading.text = "Score: "+ score.ToString();
         }
-        heading.text = "Score: "+ score.ToString();
+        
     }
 }
