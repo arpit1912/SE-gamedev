@@ -10,6 +10,10 @@ TagManager:
   - glass
   - charge
   - plastic
+  - ewaste
+  - paper
+  - battery
+  - ground
   layers:
   - Default
   - TransparentFX
