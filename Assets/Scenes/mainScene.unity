@@ -547,36 +547,6 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 2077127652}
---- !u!1 &160701843
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 160701844}
-  m_Layer: 9
-  m_Name: GroundCheckPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &160701844
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 160701843}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.68, y: -5.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 453690252}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &155465468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1907,61 +1877,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5252059202004743126, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059202315044926, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059202734095703, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059202818282789, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059202884424946, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059202919316497, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203079702960, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203080822515, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203121709204, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203190743519, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203440734775, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 5252059203657846434, guid: e98b20d6ab480e140a41e6e4521c6ee1,
         type: 3}
       propertyPath: m_RootOrder
@@ -2021,26 +1936,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Platform
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203657846435, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203667687402, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203785794973, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5252059203902433010, guid: e98b20d6ab480e140a41e6e4521c6ee1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e98b20d6ab480e140a41e6e4521c6ee1, type: 3}
@@ -2840,31 +2735,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597429275}
   m_CullTransparentMesh: 0
---- !u!1 &1631354732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4495567079661056262, guid: 96252341be9287e4886e40fad9849406,
-    type: 3}
-  m_PrefabInstance: {fileID: 6386316417560032215}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1631354737
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631354732}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5ff818d69cac67b4987e0f6523603a81, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1699780997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4116,22 +3986,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 155465466}
     m_Modifications:
-    - target: {fileID: 453690256, guid: 96252341be9287e4886e40fad9849406, type: 3}
-      propertyPath: groundCheckPoint
-      value: 
-      objectReference: {fileID: 160701844}
-    - target: {fileID: 453690256, guid: 96252341be9287e4886e40fad9849406, type: 3}
-      propertyPath: groundCheckRadius
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 453690256, guid: 96252341be9287e4886e40fad9849406, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 453690254, guid: 96252341be9287e4886e40fad9849406, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 6c6a4bea42ccc754c8f92e78576eee0f, type: 2}
     - target: {fileID: 4495567079661056262, guid: 96252341be9287e4886e40fad9849406,
         type: 3}
       propertyPath: m_Name
