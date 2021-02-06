@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask groundLayer;
     private bool isTouchingGround;
+    public HealthBar healthbar;
     void Start()
     {
         playerAnimation = GetComponent<Animator>();
@@ -30,7 +32,7 @@ public class PlayerController : MonoBehaviour
            GameObject go = GameObject.Find("player_sprite");
            Vector3 pos = go.transform.position;
            pos.x = PlayerPrefs.GetFloat("playerX");
-           pos.y = PlayerPrefs.GetFloat("playerY");
+           pos.y = 9.0f;
            go.transform.position = pos;
            return;
        }
@@ -51,21 +53,21 @@ public class PlayerController : MonoBehaviour
        Debug.Log(isTouchingGround);
        playerAnimation.SetBool("OnGround",isTouchingGround);
        if(jump > 0){
-           //playerAnimation.SetBool("OnGround",false);
            rigidbody.velocity = new Vector2(GameSpeed,speed);
-             
-        }
+       }
        else{
-           //playerAnimation.SetBool("OnGround",true);
-           
            rigidbody.velocity = new Vector2(GameSpeed,-speed + 4);
             
        }
-       // Debug.Log(Time.frameCount);
-
-        // if(Time.frameCount % 500 == 0){
-        //     playerAnimation.SetBool("IsHealthy",false);
-        // }
-        //Debug.Log("move-key");
+       
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("obstacles"))
+        {
+            healthbar.DealtDamage(5f);
+        }
+    }
+    
 }

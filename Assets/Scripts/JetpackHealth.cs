@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class JetpackHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
-	public int currentHealth;
-
+    public float maxHealth = 100;
+	public float currentHealth;
+	public float currentFactor;
 	public JetpackPower healthBar;
-
+	public int LevelUpTime = 5;
+	public float time;
     // Start is called before the first frame update
     void Start()
     {
+	    time = Time.time;
+	    currentFactor = 0.005f;
 		currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
     }
@@ -19,16 +22,25 @@ public class JetpackHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			TakeDamage(5);
-		}
+	    if (Time.time - time > LevelUpTime)
+	    {
+		    currentFactor += currentFactor;
+		    time = Time.time;
+	    }
+	    
+	    if (Input.GetKeyDown(KeyCode.Space))
+	    {
+		    TakeDamage(5*currentFactor);
+		    return;
+	    }
+	    TakeDamage(currentFactor); 
+		
     }
 
-	void TakeDamage(int damage)
+	void TakeDamage(float factor)
 	{
-		currentHealth -= damage;
-
+		
+		currentHealth -= factor;
 		healthBar.SetHealth(currentHealth);
 	}
 }

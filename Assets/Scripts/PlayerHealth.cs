@@ -5,14 +5,16 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
 
-	public int maxHealth = 100;
-	public int currentHealth;
+	public float maxHealth = 100;
+	public float currentHealth;
 
 	public HealthBar healthBar;
-
+	
+	private int time;
     // Start is called before the first frame update
     void Start()
     {
+	    time = (int)Time.time ;
 		currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
     }
@@ -20,13 +22,15 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			TakeDamage(10);
-		}
+	    
+		//ContinuosDamage();
     }
 
-	void TakeDamage(int damage)
+    void ContinuosDamage()
+    {
+	    TakeDamage(0.5f);
+    }
+	void TakeDamage(float damage)
 	{
 		currentHealth -= damage;
 
