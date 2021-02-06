@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainSceneChanger : MonoBehaviour
@@ -22,7 +23,7 @@ public class MainSceneChanger : MonoBehaviour
         Destroy(GameObject.Find("DoorLocked"));
         sceneChangeOccurred = true;
         Debug.Log("Triggered");
-        PlayerPrefs.SetFloat("playerY",go.transform.position.y);
+        //PlayerPrefs.SetFloat("playerY",go.transform.position.y);
         PlayerPrefs.SetFloat("playerX",go.transform.position.x);
         SceneManager.LoadScene("DumpPortalScene");
 

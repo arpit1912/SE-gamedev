@@ -1,13 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class JetpackHealth : MonoBehaviour
 {
-    public float maxHealth = 100;
-	public float currentHealth;
+    //public float maxHealth = 100;
+	//private float currentHealth;
 	public float currentFactor;
-	public JetpackPower healthBar;
+	public JetpackPower jetpackbar;
 	public int LevelUpTime = 5;
 	public float time;
     // Start is called before the first frame update
@@ -15,8 +16,13 @@ public class JetpackHealth : MonoBehaviour
     {
 	    time = Time.time;
 	    currentFactor = 0.005f;
-		currentHealth = maxHealth;
-		healthBar.SetMaxHealth(maxHealth);
+	    Debug.Log("This is the jetpack bar "+jetpackbar.slider.value);
+		jetpackbar.SetHealth(PlayerPrefs.GetFloat("jetpack"));
+    }
+
+    private void OnDestroy()
+    {
+	    PlayerPrefs.SetFloat("jetpack",jetpackbar.slider.value);
     }
 
     // Update is called once per frame
@@ -40,7 +46,7 @@ public class JetpackHealth : MonoBehaviour
 	void TakeDamage(float factor)
 	{
 		
-		currentHealth -= factor;
-		healthBar.SetHealth(currentHealth);
+		jetpackbar.slider.value -= factor;
+		jetpackbar.SetHealth(jetpackbar.slider.value);
 	}
 }

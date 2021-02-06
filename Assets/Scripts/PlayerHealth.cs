@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,25 +16,14 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
 	    time = (int)Time.time ;
-		currentHealth = maxHealth;
-		healthBar.SetMaxHealth(maxHealth);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-	    
-		//ContinuosDamage();
-    }
-
-    void ContinuosDamage()
-    {
-	    TakeDamage(0.5f);
-    }
-	void TakeDamage(float damage)
-	{
-		currentHealth -= damage;
-
+	    currentHealth = PlayerPrefs.GetFloat("health");
 		healthBar.SetHealth(currentHealth);
-	}
+    }
+
+    private void OnDestroy()
+    {
+	    Debug.Log("health bar :"+healthBar.slider.value);
+	    PlayerPrefs.SetFloat("health",healthBar.slider.value);
+    }
+
 }

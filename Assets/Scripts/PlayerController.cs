@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
     {
        jump = Input.GetAxis("Jump");
        isTouchingGround = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
-       Debug.Log(isTouchingGround);
+//       Debug.Log(isTouchingGround);
        playerAnimation.SetBool("OnGround",isTouchingGround);
        if(jump > 0){
            rigidbody.velocity = new Vector2(GameSpeed,speed);

@@ -21,7 +21,7 @@ public class DumpPortalTimer : MonoBehaviour
     void Update()
     {
         display = timeinterval - (Time.time - startTime);
-        Debug.Log (display);
+//        Debug.Log (display);
         TextIndicator.GetComponent<Text>().text = ((int)display).ToString();
         LoadingBar.GetComponent<Image>().fillAmount =  (display/timeinterval);
     }

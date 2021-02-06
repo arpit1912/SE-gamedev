@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
@@ -15,6 +16,16 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1f;
          //StartCoroutine(PlayGames());
          
+    }
+
+    private void Start()
+    {
+        PlayerPrefs.SetInt("Score",0);
+        PlayerPrefs.SetFloat("health",100);
+        //Debug.Log("this is the health: "+PlayerPrefs.GetFloat("health"));
+        PlayerPrefs.SetFloat("jetpack",100);
+        Debug.Log("this is the jetpack: "+PlayerPrefs.GetFloat("jetpack"));
+
     }
 
     public Animator transition;

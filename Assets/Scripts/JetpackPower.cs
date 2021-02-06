@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,15 +10,14 @@ public class JetpackPower : MonoBehaviour
 	public Gradient gradient;
 	public Image fill;
 
-	public void SetMaxHealth(float health)
+	
+	private void Start()
 	{
-		slider.maxValue = health;
-		slider.value = health;
-
+		slider.maxValue = 100;
 		fill.color = gradient.Evaluate(1f);
 	}
 
-    public void SetHealth(float health)
+	public void SetHealth(float health)
 	{
 		slider.value = health;
 
