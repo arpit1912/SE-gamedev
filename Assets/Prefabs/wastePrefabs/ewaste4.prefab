@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3632225138291099931}
   - component: {fileID: 3869881304075628611}
   - component: {fileID: -4513134205333918550}
+  - component: {fileID: -8988403920576700643}
   m_Layer: 0
   m_Name: ewaste4
   m_TagString: Untagged
@@ -135,3 +136,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformDestructionPoint: {fileID: 0}
+--- !u!114 &-8988403920576700643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762932331663445372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67aef024d4ea2ca48b9e350d400d6c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degreesPerSecond: 5
+  amplitude: 0.5
+  frequency: 1

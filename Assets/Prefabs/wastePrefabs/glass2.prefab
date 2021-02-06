@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 84465247791372008}
   - component: {fileID: 1025670294094374713}
   - component: {fileID: 8318403408760164329}
+  - component: {fileID: -4332641925053646724}
   m_Layer: 0
   m_Name: glass2
   m_TagString: Untagged
@@ -154,3 +155,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857049e906179934fa46f8ac9f6c5f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4332641925053646724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745834889756837988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67aef024d4ea2ca48b9e350d400d6c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degreesPerSecond: 5
+  amplitude: 0.5
+  frequency: 1
