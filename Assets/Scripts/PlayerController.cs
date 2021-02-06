@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,10 +12,14 @@ public class PlayerController : MonoBehaviour
     private float jump = 0f;
     private bool IsPressed = false;
     private Rigidbody2D rigidbody;
-    
+    private Animator playerAnimation;
+    public Transform groundCheckPoint;
+    public float groundCheckRadius;
+    public LayerMask groundLayer;
+    private bool isTouchingGround;
     void Start()
     {
-       
+        playerAnimation = GetComponent<Animator>();
        if (Instance != null)
        {
            
@@ -32,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
        Instance = this;
        //Debug.Log("Hello");
+       
        GameObject.DontDestroyOnLoad(this.gameObject);
        rigidbody = GetComponent<Rigidbody2D> ();
        rigidbody.velocity = new Vector2(GameSpeed,0);
@@ -41,14 +47,16 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
        jump = Input.GetAxis("Jump");
-
+       isTouchingGround = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
+       Debug.Log(isTouchingGround);
+       playerAnimation.SetBool("OnGround",isTouchingGround);
        if(jump > 0){
-           //playerAnimation.SetBool("IsJumpClicked",true);
+           //playerAnimation.SetBool("OnGround",false);
            rigidbody.velocity = new Vector2(GameSpeed,speed);
              
         }
        else{
-           //playerAnimation.SetBool("IsJumpClicked",false);
+           //playerAnimation.SetBool("OnGround",true);
            
            rigidbody.velocity = new Vector2(GameSpeed,-speed + 4);
             
