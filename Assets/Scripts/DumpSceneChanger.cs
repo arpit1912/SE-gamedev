@@ -16,7 +16,7 @@ public class DumpSceneChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - startTime > 5)
+        if (Time.time - startTime > 15)
         {
             SceneManager.LoadScene("mainScene");
         }
