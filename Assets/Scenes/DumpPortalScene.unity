@@ -2980,7 +2980,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6496184150367637525}
   m_HandleRect: {fileID: 6496184150367637524}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3357,6 +3357,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d7f88b66c64ef74b9bab7d4278d5f24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonTemplate:
+  - {fileID: 6496184152407882651}
+  - {fileID: 6496184150541103781}
+  - {fileID: 8055339533029615089}
+  - {fileID: 4780067405998389511}
+  - {fileID: 1031401728954949769}
+  - {fileID: 8519532644110203046}
+  - {fileID: 8279724666776900839}
+  - {fileID: 1596922096753930823}
+  - {fileID: 7602708357177249249}
+  - {fileID: 6829370024247880293}
+  - {fileID: 5984182791964264878}
+  - {fileID: 6660814764813594732}
+  - {fileID: 8830750339936458370}
+  - {fileID: 7943257317262091331}
+  - {fileID: 6561508165872473247}
+  - {fileID: 6496184150947492914}
 --- !u!114 &6496184152035965527
 MonoBehaviour:
   m_ObjectHideFlags: 0

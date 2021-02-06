@@ -46,7 +46,13 @@ public class JetpackHealth : MonoBehaviour
 
 	void TakeDamage(float factor)
 	{
-		
+
+		if (jetpackbar.slider.value < 0)
+		{
+			jetpackbar.slider.value = 0;
+			return;
+		}
+			
 		jetpackbar.slider.value -= factor;
 		jetpackbar.SetHealth(jetpackbar.slider.value);
 	}

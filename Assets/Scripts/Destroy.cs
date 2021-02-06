@@ -24,42 +24,56 @@ public class Destroy : MonoBehaviour
             if((TypeController.getType() == 0) &&  gameObject.CompareTag("ewaste"))
             {
                 Destroy(this.gameObject);
+                updatefuel(30);
+                updatehealth(10);
                 Debug.Log("This is e-waste waste");
                 return;
             }
             else if ((TypeController.getType() == 1) &&  gameObject.CompareTag("battery"))
             {
                 Destroy(this.gameObject);
+                updatefuel(40);
+                updatehealth(10);
                 Debug.Log("This is battery waste");
                 return;
             }
             else if((TypeController.getType() == 2) &&  gameObject.CompareTag("glass"))
             {
                 Destroy(this.gameObject);
+                updatefuel(40);
+                updatehealth(10);
                 Debug.Log("This is glass waste");
                 return;
             }
             else if((TypeController.getType() == 3) &&  gameObject.CompareTag("bio-degradable"))
             {
                 Destroy(this.gameObject);
+                updatefuel(40);
+                updatehealth(10);
                 Debug.Log("This is bio-degradable waste");
                 return;
             }
             else if((TypeController.getType() == 4) &&  gameObject.CompareTag("paper"))
             {
                 Destroy(this.gameObject);
+                updatefuel(40);
+                updatehealth(10);
                 Debug.Log("This is the paper up!!");
                 return;
             }
             else if((TypeController.getType() == 5) &&  gameObject.CompareTag("metal"))
             {
                 Destroy(this.gameObject);
+                updatefuel(10);
+                updatehealth(10);
                 Debug.Log("This is metal waste");
                 return;
             }
             else if((TypeController.getType() == 6) &&  gameObject.CompareTag("plastic"))
             {
                 Destroy(this.gameObject);
+                updatefuel(20);
+                updatehealth(10);
                 Debug.Log("This is plastic waste");
                 return;
             }
@@ -68,6 +82,8 @@ public class Destroy : MonoBehaviour
     public void updatehealth(float number){
         float current_health = PlayerPrefs.GetFloat("health");
         current_health += number;
+        if (current_health > 100)
+            current_health = 100;
         PlayerPrefs.SetFloat("health",current_health);
     }
 
@@ -75,6 +91,10 @@ public class Destroy : MonoBehaviour
     {
         float current_fuel = PlayerPrefs.GetFloat("jetpack");
         current_fuel += number;
+        Debug.Log(current_fuel);
+        if (current_fuel > 100)
+            current_fuel = 100;
+        
         PlayerPrefs.SetFloat("jetpack",current_fuel);
 
     }
