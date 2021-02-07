@@ -75,6 +75,11 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void InstructionMenu ()
+    {
+        SceneManager.LoadScene("InstructionScene");
+    }
+
 
 }
 
