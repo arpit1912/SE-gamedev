@@ -25,8 +25,12 @@ public class GridControl : MonoBehaviour
         for (int i = 0; i < buttonTemplate.Length; i++)
         {        
             templateCounts.Add(buttonTemplate[i].name,PlayerPrefs.GetInt(buttonTemplate[i].name));
-            //Debug.Log(buttonTemplate[i].name + "  "+ PlayerPrefs.GetInt(buttonTemplate[i].name));
-            //Debug.Log(templateCounts[buttonTemplate[i].name]);
+            
+            if (templateCounts[buttonTemplate[i].name] > 3)
+            {
+                templateCounts[buttonTemplate[i].name] = 3;
+            }
+            
             InventorySize += templateCounts[buttonTemplate[i].name];
         }
         

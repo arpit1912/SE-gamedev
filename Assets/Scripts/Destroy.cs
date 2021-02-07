@@ -27,6 +27,7 @@ public class Destroy : MonoBehaviour
                 updatefuel(30);
                 updatehealth(10);
                 Debug.Log("This is e-waste waste");
+                ReduceType(gameObject.name.Split('(')[0]);
                 return;
             }
             else if ((TypeController.getType() == 1) &&  gameObject.CompareTag("battery"))
@@ -35,6 +36,7 @@ public class Destroy : MonoBehaviour
                 updatefuel(40);
                 updatehealth(10);
                 Debug.Log("This is battery waste");
+                ReduceType(gameObject.name.Split('(')[0]);
                 return;
             }
             else if((TypeController.getType() == 2) &&  gameObject.CompareTag("glass"))
@@ -43,6 +45,7 @@ public class Destroy : MonoBehaviour
                 updatefuel(40);
                 updatehealth(10);
                 Debug.Log("This is glass waste");
+                ReduceType(gameObject.name.Split('(')[0]);
                 return;
             }
             else if((TypeController.getType() == 3) &&  gameObject.CompareTag("bio-degradable"))
@@ -51,6 +54,7 @@ public class Destroy : MonoBehaviour
                 updatefuel(40);
                 updatehealth(10);
                 Debug.Log("This is bio-degradable waste");
+                ReduceType(gameObject.name.Split('(')[0]);
                 return;
             }
             else if((TypeController.getType() == 4) &&  gameObject.CompareTag("paper"))
@@ -59,6 +63,7 @@ public class Destroy : MonoBehaviour
                 updatefuel(40);
                 updatehealth(10);
                 Debug.Log("This is the paper up!!");
+                ReduceType(gameObject.name.Split('(')[0]);
                 return;
             }
             else if((TypeController.getType() == 5) &&  gameObject.CompareTag("metal"))
@@ -67,6 +72,7 @@ public class Destroy : MonoBehaviour
                 updatefuel(10);
                 updatehealth(10);
                 Debug.Log("This is metal waste");
+                ReduceType(gameObject.name.Split('(')[0]);
                 return;
             }
             else if((TypeController.getType() == 6) &&  gameObject.CompareTag("plastic"))
@@ -75,6 +81,7 @@ public class Destroy : MonoBehaviour
                 updatefuel(20);
                 updatehealth(10);
                 Debug.Log("This is plastic waste");
+                ReduceType(gameObject.name.Split('(')[0]);
                 return;
             }
         });
@@ -97,6 +104,22 @@ public class Destroy : MonoBehaviour
         
         PlayerPrefs.SetFloat("jetpack",current_fuel);
 
+    }
+
+    public void ReduceType( string name)
+    {
+        int temp = PlayerPrefs.GetInt(name);
+        Debug.Log("current it is "+ temp+ " for "+ name);
+        temp--;
+        if (temp < 0)
+        {
+            temp = 0;
+
+        }
+            
+        Debug.Log(temp);
+        
+        PlayerPrefs.SetInt(name,temp);
     }
     // Update is called once per frame
     void Update()
