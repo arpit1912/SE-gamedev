@@ -29,8 +29,13 @@ public class slideshow : MonoBehaviour
         Rect imageRect = new Rect(0, -1.5f, Screen.width + 10, Screen.height + 10);
         Rect buttonRect = new Rect(0, Screen.height - Screen.height / 12, Screen.width/2, Screen.height / 12);
         Rect buttonRect2 = new Rect(Screen.width/2, Screen.height - Screen.height / 12, Screen.width/2 , Screen.height / 12);
- 
-       
+
+        if (currentImage >= imageArray.Length)
+        {
+            SceneManager.LoadScene("menuScene");
+            return;
+        }
+            
    // GUI.Label(guiRect, imageArray[currentImage]);
         GUI.Label(imageRect, imageArray[currentImage]);
    
@@ -41,8 +46,7 @@ public class slideshow : MonoBehaviour
             currentImage++;
         
        
-        if(currentImage >= imageArray.Length)
-            SceneManager.LoadScene("menuScene");
+        
     }
     // Start is called before the first frame update
     void Start()
