@@ -14,6 +14,7 @@ public class Destroy : MonoBehaviour
     // 4 paper
     // 5 metal
     // 6 plastic
+    //public Shaker Shaker;
     void Start()
     {
         var button = transform.GetComponent<Button>();
@@ -84,6 +85,8 @@ public class Destroy : MonoBehaviour
                 ReduceType(gameObject.name.Split('(')[0]);
                 return;
             }
+            
+            Shaker.instance.Shake(0.5f);
         });
     }
     public void updatehealth(float number){

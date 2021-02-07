@@ -513,6 +513,7 @@ GameObject:
   - component: {fileID: 790518695}
   - component: {fileID: 790518694}
   - component: {fileID: 790518693}
+  - component: {fileID: 790518696}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -585,6 +586,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790518696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790518692}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b28cacf23b1030e46a6e6ddc6b51e025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Intensity: 2
 --- !u!1 &1040602107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,6 +1908,7 @@ GameObject:
   - component: {fileID: 1802379477028922433}
   - component: {fileID: 6165446100134466918}
   - component: {fileID: 6496184150812653893}
+  - component: {fileID: 2822187948335005825}
   m_Layer: 5
   m_Name: ItemScrollMenu
   m_TagString: Untagged
@@ -1901,6 +1916,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2822187948335005825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822187948335005824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b28cacf23b1030e46a6e6ddc6b51e025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Intensity: 3
 --- !u!222 &2844147011420080636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2587,6 +2615,7 @@ GameObject:
   - component: {fileID: 2181401586799205688}
   - component: {fileID: 6496184151408818709}
   - component: {fileID: 6496184152035965527}
+  - component: {fileID: 5705572463245226727}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2594,6 +2623,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5705572463245226727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705572463245226726}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b28cacf23b1030e46a6e6ddc6b51e025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Intensity: 5
 --- !u!224 &5818179084192651387
 RectTransform:
   m_ObjectHideFlags: 0
