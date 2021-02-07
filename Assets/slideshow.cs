@@ -14,7 +14,7 @@ public class slideshow : MonoBehaviour
  
     public Texture[] imageArray;
     private int currentImage;
-    //public GUIStyle customButton;
+    public GUIStyle customButton;
     //private Rect imageRect;
     //private Rect buttonRect;
    
@@ -37,7 +37,7 @@ public class slideshow : MonoBehaviour
         }
             
    // GUI.Label(guiRect, imageArray[currentImage]);
-        GUI.Label(imageRect, imageArray[currentImage]);
+        GUI.Label(imageRect, imageArray[currentImage], customButton);
    
         if(GUI.Button(buttonRect, "Menu"))
             SceneManager.LoadScene("menuScene");
