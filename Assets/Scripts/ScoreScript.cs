@@ -35,7 +35,7 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PlayerController.isDead)
+        if (!PlayerController.isDead && !PauseMenu.GameIsPaused)
         {
             count++;
             if (count == 20)

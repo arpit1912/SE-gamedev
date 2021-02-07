@@ -29,18 +29,22 @@ public class JetpackHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	    if (Time.time - time > LevelUpTime)
+	    if(!PauseMenu.GameIsPaused)
 	    {
-		    currentFactor += currentFactor;
-		    time = Time.time;
+		    if (Time.time - time > LevelUpTime)
+		    {
+			    currentFactor += currentFactor;
+			    time = Time.time;
+		    }
+
+		    if (Input.GetKeyDown(KeyCode.Space))
+		    {
+			    TakeDamage(5 * currentFactor);
+			    return;
+		    }
+
+		    TakeDamage(currentFactor);
 	    }
-	    
-	    if (Input.GetKeyDown(KeyCode.Space))
-	    {
-		    TakeDamage(5*currentFactor);
-		    return;
-	    }
-	    TakeDamage(currentFactor); 
 		
     }
 

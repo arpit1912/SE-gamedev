@@ -35,20 +35,25 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-	    if (Time.time - time > 8)
+	    if(!PauseMenu.GameIsPaused)
 	    {
-		    factor = factor * 1.2f;
-		    time = Time.time;
-	    }
+		    if (Time.time - time > 8)
+		    {
+			    factor = factor * 1.2f;
+			    time = Time.time;
+		    }
 
-		slider.value -= 0.008f;
+		    slider.value -= 0.008f;
+	    }
 
     }
 
     public void DealtDamage(float damage)
     {
-	    slider.value -= factor*damage;
-	    fill.color = gradient.Evaluate(slider.normalizedValue);
+	    if (!PauseMenu.GameIsPaused)
+	    {
+		    slider.value -= factor * damage;
+		    fill.color = gradient.Evaluate(slider.normalizedValue);
+	    }
     }
-
 }
