@@ -112,11 +112,11 @@ public class platformGenerator : MonoBehaviour
                             randomSpikeThreshold += 1f;
                         }
 
-                        Vector3 newSpikeposition = new Vector3(Random.Range(5f, 9.5f), 0f, 0f);
+                        Vector3 newSpikeposition = new Vector3(Random.Range(0,2), 0f, 0f);
                         spikeSelector = Random.Range(0, theSpikes.Length);
                         Instantiate (theSpikes[spikeSelector], transform.position + spikePosition[spikeSelector] + newSpikeposition, transform.rotation );
 
-                        newSpikeposition = new Vector3(Random.Range(9.5f, 14f), 0f, 0f);
+                        newSpikeposition = new Vector3(Random.Range(12f, 14f), 0f, 0f);
                         spikeSelector = Random.Range(0, theSpikes.Length);
                         Instantiate (theSpikes[spikeSelector], transform.position + spikePosition[spikeSelector] - newSpikeposition, transform.rotation );
                     }
