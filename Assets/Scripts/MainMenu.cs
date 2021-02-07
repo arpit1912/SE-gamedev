@@ -24,6 +24,23 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetFloat("health",100);
         //Debug.Log("this is the health: "+PlayerPrefs.GetFloat("health"));
         PlayerPrefs.SetFloat("jetpack",100);
+        PlayerPrefs.SetInt("battery",0);
+        PlayerPrefs.SetInt("ewaste1",0);
+        PlayerPrefs.SetInt("ewaste2",0);
+        PlayerPrefs.SetInt("ewaste4",0);
+        PlayerPrefs.SetInt("glass1",0);
+        PlayerPrefs.SetInt("glass2",0);
+        PlayerPrefs.SetInt("metal1",0);
+        PlayerPrefs.SetInt("metal2",0);
+        PlayerPrefs.SetInt("metal3",0);
+        PlayerPrefs.SetInt("organic1",0);
+        PlayerPrefs.SetInt("organic2",0);
+        PlayerPrefs.SetInt("organic3",0);
+        PlayerPrefs.SetInt("paper1",0);
+        PlayerPrefs.SetInt("paper2",0);
+        PlayerPrefs.SetInt("plastic1",0);
+        PlayerPrefs.SetInt("plastic2",0);
+
         Debug.Log("this is the jetpack: "+PlayerPrefs.GetFloat("jetpack"));
 
     }

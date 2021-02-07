@@ -4905,6 +4905,10 @@ PrefabInstance:
       propertyPath: jetpackbar
       value: 
       objectReference: {fileID: 688930329}
+    - target: {fileID: 453690256, guid: 96252341be9287e4886e40fad9849406, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1585798968}
     - target: {fileID: 4495567079661056262, guid: 96252341be9287e4886e40fad9849406,
         type: 3}
       propertyPath: m_Name
